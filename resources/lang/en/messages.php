@@ -6,8 +6,7 @@ return [
      'name'=>'Name city'
    ],
    'history'=>'View history',
-   'historytitle'=>'History',
-    'city' => 'City',
+   'historytitle'=>'History', 
     'humidity' => 'Humidity',
     'weather' => 'Weather',
     'description' => 'Description'

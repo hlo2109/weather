@@ -26,7 +26,7 @@
                             className="icosClimas"
                             >
                     </l-icon>
-                    <l-popup :lat-lng="item"  :content="`<strong>${__('messages.city')}</strong>: ${item.name} <br> <strong>${__('messages.humidity')}</strong>:${item.humidity} <br> <strong>${__('messages.weather')}</strong> ${item.tiempo.description}`"/>
+                    <l-popup :lat-lng="item"  :content="`<strong>${__('messages.name')}</strong>: ${item.name} <br> <strong>${__('messages.humidity')}</strong>:${item.humidity} <br> <strong>${__('messages.weather')}</strong> ${item.tiempo.description}`"/>
                 </l-marker>
                 
             </l-map>
