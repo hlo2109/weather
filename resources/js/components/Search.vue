@@ -1,6 +1,6 @@
 <template>
   <div class="contsearch"> 
-    <input type="text" :placeholder="__('messages.city.title')" v-model="search">
+    <input type="text" :placeholder="__('messages.city.city')" v-model="search">
     <ul>
       <li v-for="(item,key) in listcitys" :key="key" @click="select_city(item.json)">
         {{ item.city_name }}
