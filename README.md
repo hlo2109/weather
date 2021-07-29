@@ -61,8 +61,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-##Se requiere APP ID de https://openweathermap.org/
+## Se requiere APP ID de https://openweathermap.org/
 
-##Agregar en .env
+## Agregar en .env
 
 OPENWEATHERMAP_APP_ID=APPID
