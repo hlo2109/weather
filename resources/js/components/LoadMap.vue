@@ -138,12 +138,16 @@
                             iconSize: [50, 50],
                             iconAnchor: [50, 50]
                         },
-                    });                    
+                    });         
+                                  
                     return rollback(city); 
                 })
                 .catch((e)=>{
-                    if(e.response.data){   
-                        this.$notify(e.response.data.message);                        
+                    if(e.response.data){
+                        this.$notify({
+                            text: e.response.data.message,
+                            type: 'error'
+                        });
                     }
                     return rollback(true);
                 })
