@@ -7,6 +7,7 @@ use Illuminate\Routing\Controller;
 use App\Http\Requests\WhaterLoad;
 use App\Http\Requests\CitySearch;
 use App\Models\History;
+use App\Models\City;
 
 class ApiController extends Controller
 {
@@ -29,8 +30,7 @@ class ApiController extends Controller
     }
 
     public function searchCitys(CitySearch $request){
-        $data = \Helper::searchCitys($request->search);
-        // $data = \Helper::listCitys();
+        $data = City::where('city_name','like','%'.strtoupper($request->search).'%')->get(); 
         return response()->json($data, 200);
     }
 }

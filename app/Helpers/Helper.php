@@ -22,7 +22,7 @@ class helper
     }
 
     public static function listCitys(){      
-      $data = file_get_contents(storage_path().'/app/current.city.list.json');
+      $data = file_get_contents(storage_path().'/app/public/current.city.list.json');
       $data = json_decode($data);
       $citys  = \collect($data); 
       return $citys;
