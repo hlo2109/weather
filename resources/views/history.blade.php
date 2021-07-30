@@ -24,7 +24,7 @@
         @foreach ($history as $item)
           <tr>
             <td>{{$item->id}}</td>
-            <td>{{$item->city_name}}</td> 
+            <td>{{$item->city_name}} ({{$item->json['sys']['country']}})</td> 
             <td>{{$item->json['main']['humidity']}}</td>
             <td>{{$item->json['weather'][0]['description']}}</td> 
             <td>{{ \helper::dateLetter($item->created_at, true) }}</td>

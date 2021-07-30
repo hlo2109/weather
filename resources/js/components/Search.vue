@@ -1,9 +1,9 @@
 <template>
   <div class="contsearch"> 
-    <input type="text" :placeholder="__('messages.city.city')" v-model="search">
+    <input type="text" :placeholder="__('messages.city.name')" v-model="search">
     <ul>
       <li v-for="(item,key) in listcitys" :key="key" @click="select_city(item.json)">
-        {{ item.city_name }}
+        {{ item.city_name }} ({{item.json.country}})
       </li>
     </ul> 
   </div>
@@ -20,7 +20,9 @@ export default {
     watch: {
         search:function(txt){ 
             if(txt.length>=3){ 
+
               axios.post('/load/searchcity', {search:txt}).then(res=>{ 
+                console.log(res.data);
                 this.listcitys = res.data;
               }).catch(e=>{ 
                 if(e.response.data){

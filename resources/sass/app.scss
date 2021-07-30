@@ -111,10 +111,14 @@ body{
       input{
         height: 30px;
         padding: 0px 10px;
+        margin: auto;
+        display: block;
       }
       ul{
         max-height: 24vh;
         overflow: auto;
+        background: #fff;
+        padding: 10px;
         li{
           margin-top: 5px;
           cursor: pointer;
