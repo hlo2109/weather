@@ -14,7 +14,7 @@
     <table>
       <thead>
         <th>ID</th>
-        <th>{{__('messages.city')}}</th>
+        <th>{{__('messages.city.name')}}</th>
         <th>{{__('messages.humidity')}}</th>
         <th>{{__('messages.weather')}}</th> 
         <th></th>
